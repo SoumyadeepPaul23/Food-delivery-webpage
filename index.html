@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food delivery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0px;
+        }
+        .logo{
+            margin: 10px 34px;
+        }
+        .logo img{
+            margin: 5px 6px ;
+            width: 100px;
+            height: 100px;
+        }
+        .navi {
+            text-decoration: none;
+            padding: 10px;
+            font-size: 1.3rem;   
+            color: rgb(255, 255, 255);
+            margin: 10px;
+        }
+        .nav::before{
+            content: "";
+            background-color: teal;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        .navi:hover{
+            color: black;
+            background-color: rgb(7, 250, 169);
+            border-radius: 18px;
+        }
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 625px;
+        }
+        #home::before{
+            content: "";
+            background-image: url('bg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+        .h-primary{
+            font-size: 3.5rem;
+            padding: 12px;
+            font-family: serif;
+        }
+        .h-secondary{
+            font-size: 2.5rem;
+            padding: 12px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #home h1{
+            color: white;
+            text-align: center;
+        }
+        #home p{
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: serif;
+        }
+        .btn{
+            padding: 6px 20px;
+            background-color: brown;
+            
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            animation-name: btn;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+        @keyframes btn {
+            0%{
+                color: white;
+                border: 2px solid rgb(250, 250, 250);
+            }
+            14%{
+                color: violet;
+                border: 2px solid violet;
+            }
+            28%{
+                color: indigo;
+                border: 2px solid indigo;
+            }
+            42%{
+                color: blue;
+                border: 2px solid blue;
+            }
+            56%{
+                color: green;
+                border: 2px solid green;
+            }
+            70%{
+                color: yellow;
+                border: 2px solid yellow;
+            }
+            84%{
+                color: orange;
+                border: 2px solid orange;
+            }
+            98%{
+                color: red;
+                border: 2px solid red;
+            }
+            
+        }
+        .btn:hover{
+            background-color: rgb(179, 60, 60);
+        }
+        .center{
+            text-align: center;
+        }
+        #services{
+            margin: 34px;
+            display: flex;
+        }
+        #services .box{
+            border: 2px solid brown;
+            margin: 15px;
+            padding: 10px;
+            border-radius: 23px;
+            background-color: rgb(214, 212, 212);
+        }
+        #services .box:hover{
+            box-shadow: 0 0 10px 5px rgb(63, 61, 61);
+            width: 1200px;
+        }
+        #services .box img{
+            height: 150px;
+            padding-top: 10px;
+            display: block;
+            margin: auto;
+        }
+        #clients{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #client-section::before{
+            content: "";
+            position: absolute;
+            background-image: url('https://i.guim.co.uk/img/media/a40c357cbf7432d1978ced299795e42294cfb403/43_43_2581_1549/master/2581.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=eb14afffb56a742196cce67e93cca2fd');
+            width: 100%;
+            height: 30%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .clients-item{
+            padding: 34px;
+        } 
+        .clients-item img{
+            height: 50px;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="logo.jpg" alt="My online food delivery app">
+        </div>
+        <a href="" class="navi">Home</a>
+        <a href="" class="navi">About Us</a>
+        <a href="" class="navi">Services</a>
+        <a href="" class="navi">Contact</a>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome To my Online Meal Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, cum ea. Esse illum quas .</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, alias?</p>
+        <br>
+        <br>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img style="width: 150px;" src="https://ak.picdn.net/shutterstock/videos/1008166561/thumb/8.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis minus dolore quidem eum laborum id consequuntur molestiae, cupiditate vitae.</p>
+            </div>
+            <div class="box">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2020/11/pizza-recipe.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis minus dolore quidem eum laborum id consequuntur molestiae, cupiditate vitae.</p>
+            </div>
+            <div class="box">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2020/11/pizza-recipe.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis minus dolore quidem eum laborum id consequuntur molestiae, cupiditate vitae.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="clients-item">
+                <img src="https://inkbotdesign.com/wp-content/uploads/2012/09/Pepsi-Logo-Design.png" alt="pepsi">
+            </div>
+            <div class="clients-item">
+                <img src="https://inkbotdesign.com/wp-content/uploads/2012/09/LG-Logo-Design.png" alt="lg">
+            </div>
+            <div class="clients-item">
+                <img src="https://inkbotdesign.com/wp-content/uploads/2012/09/NBC-Logo-Design.png" alt="nac">
+            </div>
+        </div>
+    </section>
+   
+</body>
+</html>
